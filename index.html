@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</meta>
+<head>
+    <title>Arcane Portal</title>
+</head>
+<body>
+    <h1>Hi, Welcome to the portal</h1>
+    
+    <div class="poem">
+        <p>A portal glows, a liquid light,<br>
+        Whispers hum of ancient might.<br>
+        Shadows swirl, the unknown call<br>
+        Step, and risk where fate befalls.<br>
+    </div>
+    <button onclick="castSpell()">Cast a spell!</button>
+     <p id="spellResult"></p>
+     <script>
+     function castSpell() {
+         document.getElementById("spellResult").innerText = "Your spell has been cast successfully!";
+     }
+     </script>
+</body>
+
+</html>
