@@ -3,6 +3,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <meta charset="UTF-8">
+
+<!-- Import JavaScript using the script tag -->
+<script type="module" src="index.js"></script>
+
  <!-- Import CSS uisng the link tag -->
 <link rel="stylesheet" type="text/css" href="style.css">
 <!-- Web Icon -->
@@ -15,7 +19,7 @@
     <div class="firstScroll">
         <h1>Hi, Welcome to the portal</h1>
         
-        <div class="poem">
+        <div class="poem hidden" id="poem">
             <p>A portal glows, a liquid light,<br>
             Whispers hum of ancient might.<br>
             Shadows swirl, the unknown call<br>
@@ -25,17 +29,29 @@
         <p id="spellResult"></p>
         <script>
         function castSpell() {
+            const poemDiv = document.getElementById("poem");
+            const spellResult = document.getElementById("spellResult");
+
+            poemDiv.classList.toggle("visible");  // Toggle visibility
+            poemDiv.classList.toggle("hidden");   // Toggle invisibility
+
+            spellResult.classList.toggle("visible");  // Toggle visibility
+            spellResult.classList.toggle("hidden");   // Toggle invisibility
+
+
             document.getElementById("spellResult").innerText = "Your spell has been cast successfully!";
         }
         </script>
      </div>
+     
+     <!-- Divider for the second scroll -->
+     <div class="divider">Second Scroll</div>
+     
+        <!-- Second Scroll -->
      <div class="secondScroll" >
-        <div class="divider">Second Scroll</div>
-        <script type="module" src="index.js"></script>
 
-        <div class="renderCanvas">
-
-        </div>
+        <div class="renderCanvas"></div>
+    
     </div>
 <!-- Test Comment -->
 </body>
