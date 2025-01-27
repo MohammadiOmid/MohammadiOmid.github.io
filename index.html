@@ -3,27 +3,40 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+ <!-- Import CSS uisng the link tag -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Web Icon -->
+<link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAADesYEAiaiwAP///wCrWAAAazcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzMzQzQzNDNDMzQzQzNDMDQDQzQzNDADMDNDMzMEIiADI0M0MyIhEgAwNDNAIRERAgIzQwIREREiIANDMhESERIgADQyEREhESIiAjMhEiEREiIjQyIgIRERIgM0MwIREREiADMjAhERERIgIAAhERERESIiIhEREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" type="image/x-icon">
 </meta>
 <head>
     <title>Arcane Portal</title>
 </head>
 <body>
-    <h1>Hi, Welcome to the portal</h1>
-    
-    <div class="poem">
-        <p>A portal glows, a liquid light,<br>
-        Whispers hum of ancient might.<br>
-        Shadows swirl, the unknown call<br>
-        Step, and risk where fate befalls.<br>
+    <div class="firstScroll">
+        <h1>Hi, Welcome to the portal</h1>
+        
+        <div class="poem">
+            <p>A portal glows, a liquid light,<br>
+            Whispers hum of ancient might.<br>
+            Shadows swirl, the unknown call<br>
+            Step, and risk where fate befalls.<br>
+        </div>
+        <button onclick="castSpell()">Cast a spell!</button>
+        <p id="spellResult"></p>
+        <script>
+        function castSpell() {
+            document.getElementById("spellResult").innerText = "Your spell has been cast successfully!";
+        }
+        </script>
+     </div>
+     <div class="secondScroll" >
+        <div class="divider">Second Scroll</div>
+        <script type="module" src="index.js"></script>
+
+        <div class="renderCanvas">
+
+        </div>
     </div>
-    <button onclick="castSpell()">Cast a spell!</button>
-     <p id="spellResult"></p>
-     <script>
-     function castSpell() {
-         document.getElementById("spellResult").innerText = "Your spell has been cast successfully!";
-     }
-     </script>
 <!-- Test Comment -->
 </body>
 
