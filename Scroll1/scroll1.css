@@ -11,8 +11,6 @@ html, body{
     color: #9290C3;
 }
 
-
-
 h1{
     font-family: 'Cinzel', serif;
     font-size: 3em;
@@ -73,7 +71,7 @@ button:hover {
     font-family: 'Cinzel', serif;
     font-size: 1.5rem;
     color: #fafaff; /* Magical Aqua Glow */
-    margin: 2.5%;
+    margin-top: 5%;
     text-shadow: 0 0 10px #7fffd4, 0 0 20px #40e0d0;
 }
 
@@ -95,42 +93,7 @@ button:hover {
 }
 
 .firstScroll{
-    height: 32%;
+    height: 40%;
 }
 
 
-.divider {
-    font-family: 'Cinzel', serif;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-  }
-  
-.divider::before, .divider::after {
-    flex: 1;
-    content: '';
-    padding: 2px;
-    background-color: #9290C3;
-    margin: 5%;
-}
-
-.secondScroll {
-    height: 20%;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
-
-.secondScroll{
-    height: 20%;
-    display: flex;
-}
-
-#renderCanvas{
-    image-rendering: pixelated;
-    display: block;
-    max-width: 100%;
-    width: 40vw;
-    height: 25vh;
-    touch-action: none;
-}

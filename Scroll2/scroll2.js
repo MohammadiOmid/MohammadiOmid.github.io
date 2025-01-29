@@ -2,16 +2,7 @@ async function init() {
     // Create a canvas tag
     const canvasTag = document.createElement('canvas');
     canvasTag.id = "renderCanvas"; // Important! This tells which CSS style to use
-    //document.body.appendChild(canvasTag);
-
-    const renderContainer = document.querySelector('.renderCanvas');
-    if (renderContainer) {
-        renderContainer.appendChild(canvasTag); // Append inside the correct div
-    } else {
-        console.error("renderCanvas container not found!");
-    }
-
-
+    document.body.appendChild(canvasTag);
 
     /*
     // Modify the canvas size
